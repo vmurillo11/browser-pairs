@@ -1,13 +1,13 @@
 {
     "name":"Browser Pairs Game",
     "developer": {
-        "name":"MozTW",
-        "url":"http://moztw.org/"
+        "name":"You"",
+        "url":"http://lsblakk.github.com/browser-pairs/index.html"
     },
     "description":"Browser Pairs Game",
-    "launch_path":"/foxmosa/game/pairs/",
+    "launch_path":"/browser-pairs/index.html",
     "icons":{
-        "64":"/foxmosa/game/pairs/images/icon64.jpg",
-        "128":"/foxmosa/game/pairs/images/icon128.jpg"
+        "64":"/browser-pairs/images/icon64.jpg",
+        "128":"/browser-pairs/images/icon128.jpg"
     }
 }
