@@ -5,26 +5,28 @@
 <title>BrowserPairs - Dare 2B Digital Test App</title>
 <meta name="viewport" content="user-scalable=no">
 
+<!-- These <link> tags load styles for the page -->
 <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:600|Days+One">
 <link rel="stylesheet" href="style.css" />
 <link rel="stylesheet" href="ribbon.css">
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 </head>
 <body>
 
-<!-- CSS GitHub ribbon http://people.mozilla.com/~jbalogh/ribbon/ribbon.html -->
 <article id="game">
-	<header id="gameStats">
-		<a id="qrcode" href="#codebox">QRCODE</a>
-		<p id="reset">Reset &raquo;</p>
-		<p id="gameScore">
-			Click: <span id="click">0</span>
-			Time: <span id="timer">0</span>
-		</p>
-		<a id="credit" href="#creditbox">Credit</a>
-		<p class="baritem" id="mute">Music</p>
-		<p class="baritem" id="fullscreen">FullScreen</p>
-	</header>
+
+  <!-- This <header> makes the bar on the top of the game area -->
+  <header id="gameStats">
+    <p id="install">Install</p>
+    <p id="reset">Reset &raquo;</p>
+    <p id="gameScore">
+      Click: <span id="click">0</span>
+      Time: <span id="timer">0</span>
+    </p>
+    <p class="baritem" id="mute">Music</p>
+    <p class="baritem" id="fullscreen">FullScreen</p>
+  </header>
+
+  <!-- This <section> makes the main game area -->
   <section id="playground">
     <div id="cards">
       <div class="card">
@@ -32,19 +34,19 @@
         <div class="face back"></div>
       </div> <!-- .card -->
     </div> <!-- #cards -->
-	  <div id="gameIntro">
-		  <div id="gamePlay">0%</div>
+    <div id="gameIntro">
+      <div id="gamePlay">0%</div>
     </div>
     <div id="gameComplete">
       <div id="result">
         <p id="score"></p>
-        <p id="share"><a class="share-button facebook-share-button" href="#" target="_blank" title="Publish message to your Facebook wall">Post on Facebook</a><a class="share-button plurk-share-button" href="#" target="_blank" title="Post to Plurk">Plurk</a>
-  </p>
       </div>
       <p><a id="gameAgain" class="button" href="#">Play again</a></p>
     </div>
   </section>
+
 </article> <!-- #game -->
+
 <div id="splash">
 	<p>
 		<span id="ie"><img src="images/icon_ie.png" alt="Internet Explorer" /></span>
@@ -61,6 +63,7 @@
 	</p>
 </div>
 
+<!-- These <audio> tags hold the sounds for the game -->
 <audio id="melody">
    <source src="sound/song.ogg" type="audio/ogg; codecs=vorbis" />
    <source src="sound/song.mp3" type="audio/mpeg" />
@@ -81,8 +84,11 @@
    <source src="sound/applause.ogg" type="audio/ogg; codecs=vorbis" />
    <source src="sound/applause.mp3" type="audio/mpeg" />
 </audio>
+
+<!-- These <script> tags load JavaScript code -->
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 <script src="pxloader.js"></script>
 <script src="script.js"></script>
+
 </body>
 </html>
