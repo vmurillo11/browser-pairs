@@ -26,15 +26,15 @@ var decent = styleSupport('transition');
 //create deck array
 var matchingGame = {};
 matchingGame.deck = [
-'ie', 'ie-icon',
-'fx', 'fx-icon',
-'cr', 'cr-icon',
-'sf', 'sf-icon',
-'op', 'op-icon',
-'ns', 'ns-icon',
-'ms', 'ms-icon',
-'tb', 'tb-icon',
-'fm', 'fm-icon'
+'ie', 'ie',
+'fx', 'fx',
+'cr', 'cr',
+'sf', 'sf',
+'op', 'op',
+'ns', 'ns',
+'ms', 'ms',
+'tb', 'tb',
+'fm', 'fm'
 ];
 
 matchingGame.clone = $.extend(true, [], matchingGame.deck);
