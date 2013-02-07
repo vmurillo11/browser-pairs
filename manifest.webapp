@@ -5,9 +5,9 @@
         "url":"http://moztw.org/"
     },
     "description":"Browser Pairs Game",
-    "launch_path":"/foxmosa/game/pairs/",
+    "launch_path":"/browser-pairs/",
     "icons":{
-        "64":"/foxmosa/game/pairs/images/icon64.jpg",
-        "128":"/foxmosa/game/pairs/images/icon128.jpg"
+        "64":"/images/icon64.jpg",
+        "128":"/images/icon128.jpg"
     }
 }
