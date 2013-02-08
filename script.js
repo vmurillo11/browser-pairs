@@ -136,33 +136,6 @@ function init() {
   }
 
   document.addEventListener('keydown', closebox, false);
-
-  //Handle the melody
-  if(mediaSupport('audio/ogg; codecs=vorbis', 'audio') ||
-    mediaSupport('audio/mpeg', 'audio')) {
-    var melody = $('#melody')[0];
-    melody.volume = 0.15;
-    melody.muted = false;
-    $('#mute').click(function() {
-      if(melody.muted) {
-      melody.muted = false;
-      $(this).addClass('melody');
-      } else {
-      melody.muted = true;
-      $(this).removeClass('melody');
-      }
-    });
-    $('#melody').on(
-      'ended',
-      function() {
-        melody.currentTime = 0;
-        melody.pause();
-        melody.play();
-      }
-    );
-    $('#mute').addClass('music').addClass('melody');
-    melody.play();
-  }
 }
 
 //start game and create cards from deck array

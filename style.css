@@ -129,11 +129,6 @@ body {
   left: -25px;
 }
 
-#mute.melody:before {
-  background-color: rgba(218, 73, 48, 1);
-  box-shadow: 0 0 5px rgba(218, 73, 48, 0.7);
-}
-
 :fullscreen #fullscreen:before {
   background-color: rgba(218, 73, 48, 1);
   box-shadow: 0 0 5px rgba(218, 73, 48, 0.7);
@@ -149,7 +144,7 @@ body {
   box-shadow: 0 0 5px rgba(218, 73, 48, 0.7);
 }
 
-#game.play #gameScore, #game.play #reset, #mute.music, #fullscreen.support {
+#game.play #gameScore, #game.play #reset, #fullscreen.support {
   display: block;
 }
 
