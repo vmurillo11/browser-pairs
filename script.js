@@ -155,7 +155,7 @@ function startGame() {
     uiCards.children().each(function(index) {
       // align the cards to be 4x4 ourselves.
       $(this).css({
-        "left" : ($(this).width() + 10) * (index % 4) + 16,
+        "left" : ($(this).width() + 10) * (index % 4) + 10,
         "top" : ($(this).height() + 10) * Math.floor(index / 4)
       });
       // get a pattern from the shuffled deck
