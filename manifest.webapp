@@ -7,7 +7,7 @@
     "description":"Browser Pairs Game",
     "launch_path":"/browser-pairs/",
     "icons":{
-        "64":"/images/icon64.jpg",
-        "128":"/images/icon128.jpg"
+        "64":"/browser-pairs/images/icon64.jpg",
+        "128":"/browser-pairs/images/icon128.jpg"
     }
 }

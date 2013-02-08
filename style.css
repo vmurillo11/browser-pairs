@@ -1,3 +1,24 @@
+/*
+These styles create the images on the cards.
+
+We're using a path to the images included in a directory in our game,
+but you can also use an image that is hosted anyhwere on the internet
+by using its url instead of a path to a local image.
+*/
+
+.ie {background: url(./images/ie.png) no-repeat -5px -15px;}
+.fx {background: url(./images/fx.png) no-repeat -5px -15px;}
+.cr {background: url(./images/cr.png) no-repeat -5px -15px;}
+.sf {background: url(./images/sf.png) no-repeat -5px -15px;}
+.op {background: url(./images/op.png) no-repeat -5px -15px;}
+.ns {background: url(./images/ns.png) no-repeat -5px -15px;}
+.ms {background: url(./images/ms.png) no-repeat -5px -15px;}
+.tb {background: url(./images/tb.png) no-repeat -5px -15px;}
+.fm {background: url(./images/fm.png) no-repeat -5px -15px;}
+
+
+/* Styles for the rest of the page */
+
 * {
   padding:0;
   margin:0;
@@ -331,15 +352,3 @@ body {
 .card-removed {
   opacity: 0;
 }
-
-/* Card images */
-
-.ie {background: url(./images/ie.png) no-repeat -5px -15px;}
-.fx {background: url(./images/fx.png) no-repeat -5px -15px;}
-.cr {background: url(./images/cr.png) no-repeat -5px -15px;}
-.sf {background: url(./images/sf.png) no-repeat -5px -15px;}
-.op {background: url(./images/op.png) no-repeat -5px -15px;}
-.ns {background: url(./images/ns.png) no-repeat -5px -15px;}
-.ms {background: url(./images/ms.png) no-repeat -5px -15px;}
-.tb {background: url(./images/tb.png) no-repeat -5px -15px;}
-.fm {background: url(./images/fm.png) no-repeat -5px -15px;}
