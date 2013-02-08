@@ -9,7 +9,7 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   <link rel="apple-touch-icon" href="images/logo.jpg" />
-  <meta name="viewport" content="width=500,user-scalable=no">
+  <meta name="viewport" content="width=device-width,user-scalable=no">
 
   <!-- This <link> tag loads fonts for the page -->
   <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:600|Days+One">
@@ -24,33 +24,32 @@
 
   <!-- This <header> makes the bar on the top of the game area -->
   <header id="gameStats">
-    <p id="install">Install</p>
+    <p id="install">Install &raquo;</p>
     <p id="reset">Reset &raquo;</p>
     <p id="gameScore">
       Click: <span id="click">0</span>
       Time: <span id="timer">0</span>
     </p>
-    <p class="baritem" id="fullscreen">FullScreen</p>
   </header>
 
-  <!-- This <section> makes the main game area -->
-  <section id="playground">
-    <div id="cards">
-      <div class="card">
-        <div class="face front"></div>
-        <div class="face back"></div>
-      </div> <!-- .card -->
-    </div> <!-- #cards -->
-    <div id="gameIntro">
-      <div id="gamePlay">0%</div>
+  <!-- This <div> holds the game cards-->
+  <div id="cards">
+    <div class="card">
+      <div class="face front"></div>
+      <div class="face back"></div>
+    </div> <!-- .card -->
+  </div> <!-- #cards -->
+
+  <div id="gameIntro">
+    <div id="gamePlay">0%</div>
+  </div>
+
+  <div id="gameComplete">
+    <div id="result">
+      <p id="score"></p>
     </div>
-    <div id="gameComplete">
-      <div id="result">
-        <p id="score"></p>
-      </div>
-      <p><a id="gameAgain" class="button" href="#">Play again</a></p>
-    </div>
-  </section>
+    <p><a id="gameAgain" class="button" href="#">Play again</a></p>
+  </div>
 
 </article> <!-- #game -->
 

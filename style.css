@@ -6,16 +6,14 @@ but you can also use an image that is hosted anyhwere on the internet
 by using its url instead of a path to a local image.
 */
 
-.ie {background: url(./images/ie.png) no-repeat -5px -15px;}
-.fx {background: url(./images/fx.png) no-repeat -5px -15px;}
-.cr {background: url(./images/cr.png) no-repeat -5px -15px;}
-.sf {background: url(./images/sf.png) no-repeat -5px -15px;}
-.op {background: url(./images/op.png) no-repeat -5px -15px;}
-.ns {background: url(./images/ns.png) no-repeat -5px -15px;}
-.ms {background: url(./images/ms.png) no-repeat -5px -15px;}
-.tb {background: url(./images/tb.png) no-repeat -5px -15px;}
-.fm {background: url(./images/fm.png) no-repeat -5px -15px;}
-
+.ie {background: url(./images/ie.png) no-repeat; background-size: contain;}
+.fx {background: url(./images/fx.png) no-repeat; background-size: contain;}
+.cr {background: url(./images/cr.png) no-repeat; background-size: contain;}
+.sf {background: url(./images/sf.png) no-repeat; background-size: contain;}
+.op {background: url(./images/op.png) no-repeat; background-size: contain;}
+.ns {background: url(./images/ns.png) no-repeat; background-size: contain;}
+.tb {background: url(./images/tb.png) no-repeat; background-size: contain;}
+.fm {background: url(./images/fm.png) no-repeat; background-size: contain;}
 
 /* Styles for the rest of the page */
 
@@ -32,12 +30,7 @@ a {
 
 body {
   text-align: center;
-  background-color: #F26522;
-  background: url(images/left.png) no-repeat bottom left fixed, url(images/right.png) no-repeat bottom right fixed, -moz-linear-gradient(0, rgba(200,0,0,.5) 50%, transparent 50%), -moz-linear-gradient(rgba(200,0,0,.5) 50%, transparent 50%), #F26522;
-  background: url(images/left.png) no-repeat bottom left fixed, url(images/right.png) no-repeat bottom right fixed, -o-linear-gradient(0, rgba(200,0,0,.5) 50%, transparent 50%), -o-linear-gradient(rgba(200,0,0,.5) 50%, transparent 50%), #F26522;
-  background: url(images/left.png) no-repeat bottom left fixed, url(images/right.png) no-repeat bottom right fixed, -webkit-linear-gradient(0, rgba(200,0,0,.5) 50%, transparent 50%), -webkit-linear-gradient(rgba(200,0,0,.5) 50%, transparent 50%), #F26522;
-  background: url(images/left.png) no-repeat bottom left fixed, url(images/right.png) no-repeat bottom right fixed, linear-gradient(0, rgba(200,0,0,.5) 50%, transparent 50%), linear-gradient(rgba(200,0,0,.5) 50%, transparent 50%), #F26522;
-  background-size: auto auto, auto auto, 50px 50px, 50px 50px, auto auto;
+  background: #001711;
   color: #DA4930;
   font-family: "Days One", sans-serif;
 }
@@ -58,14 +51,9 @@ body {
   left: 0;
   bottom: 0;
   right: 0;
-  background: #001711;
-  width: 760px;
-  height: 530px;
   margin: auto;
   display: block;
   box-shadow: 0px 3px 12px #000;
-  border-radius: 4px;
-  padding: 20px;
 }
 #gameStats {
   background: #eee;
@@ -73,9 +61,9 @@ body {
   float: left;
   box-shadow: inset 0 0 8px #000;
   border-radius: 4px;
-  padding: 10px 0;
-  height: 20px;
-  font-size: 16px;
+  padding: 8px 0;
+  height: 14px;
+  font-size: 12px;
 }
 
 #install,
@@ -96,67 +84,17 @@ body {
   cursor: pointer;
 }
 
-.baritem {
-  display: none;
-  float: right;
-  text-align: right;
-  margin: 0 10px 0 30px;
-  cursor: pointer;
-  position: relative;
-}
-
-.baritem:before {
-  position: absolute;
-  content: "";
-  width: 16px;
-  height: 16px;
-  border-radius: 8px;
-  background-color: #000;
-  box-shadow: inset 0 0 3px #DA4930;
-  top: 2px;
-  left: -25px;
-}
-
-.baritem:after {
-  position: absolute;
-  content: "";
-  width: 16px;
-  height: 16px;
-  border-radius: 8px;
-  background-color: rgba(255, 255, 255, 0.1);
-  box-shadow: inset 0 0 3px #ddd;
-  top: 2px;
-  left: -25px;
-}
-
-:fullscreen #fullscreen:before {
-  background-color: rgba(218, 73, 48, 1);
-  box-shadow: 0 0 5px rgba(218, 73, 48, 0.7);
-}
-
-:-moz-full-screen #fullscreen:before {
-  background-color: rgba(218, 73, 48, 1);
-  box-shadow: 0 0 5px rgba(218, 73, 48, 0.7);
-}
-
-:-webkit-full-screen #fullscreen:before {
-  background-color: rgba(218, 73, 48, 1);
-  box-shadow: 0 0 5px rgba(218, 73, 48, 0.7);
-}
-
-#game.play #gameScore, #game.play #reset, #fullscreen.support {
+#game.play #gameScore, #game.play #reset {
   display: block;
 }
 
 #playground {
-  margin-top: 58px;
   position: relative;
-  height: 500px;
 }
 
 #cards {
   position: absolute;
-  top: 0;
+  top: 36px;
   left: 0;
   bottom: 0;
   right: 0;
@@ -170,10 +108,10 @@ body {
 
 /* Define the 3D perspective view and dimension of each card. */
 .card {
-  -webkit-perspective: 600px;
-  -moz-perspective: 600px;
-  width: 110px;
-  height: 145px;
+  -webkit-perspective: 300px;
+  -moz-perspective: 300px;
+  width: 56px;
+  height: 88px;
   position: absolute;
   -moz-transition: all .3s ease;
   -webkit-transition: all .3s ease;
@@ -189,10 +127,8 @@ body {
 #gameIntro {
   padding-top: 10px;
   text-align: center;
-  height: 480px;
-  width: 760px;
   position: absolute;
-  top: 0;
+  top: 34px;
   left: 0;
   bottom: 0;
   right: 0;
@@ -219,7 +155,7 @@ body {
   border-radius: 5px;
   display: block;
   font-size: 2em;
-  margin: 350px auto 0;
+  margin: 200px auto 0;
   padding: 10px;
   width: 150px;
   border: 8px solid #DA4930;
@@ -244,8 +180,6 @@ body {
   left: 0;
   bottom: 0;
   right: 0;
-  width: 760px;
-  height: 400px;
   visibility: hidden;
   z-index: 1;
 }
@@ -272,35 +206,13 @@ body {
 
 #result {
   background: white;
-  margin: 290px auto 0;
+  margin: 150px auto 0;
   width: 60%;
   border-radius: 5px;
   font-size: 20px;
   border: 8px solid #DA4930;
   padding: 20px 0;
   position: relative;
-}
-
-#result:before {
-  content: ' ';
-  position: absolute;
-  width: 0;
-  height: 0;
-  left: 140px;
-  top: -50px;
-  border: 25px solid;
-  border-color: transparent #DA4930 #DA4930 transparent;
-}
-
-#result:after {
-  content: ' ';
-  position: absolute;
-  width: 0;
-  height: 0;
-  left: 142px;
-  top: -30px;
-  border: 20px solid;
-  border-color: transparent #fff #fff transparent;
 }
 
 .face {

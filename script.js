@@ -29,9 +29,8 @@ matchingGame.deck = [
 'sf', 'sf',
 'op', 'op',
 'ns', 'ns',
-'ms', 'ms',
 'tb', 'tb',
-'fm', 'fm'
+'fm', 'fm',
 ];
 
 matchingGame.clone = $.extend(true, [], matchingGame.deck);
@@ -149,15 +148,15 @@ function startGame() {
   if (playGame == false) {
     playGame = true;
     $.shuffle(matchingGame.deck.sort(function(){return 0.5 - Math.random();}));
-    for(var i=0;i<17;i++){
+    for(var i=0;i<15;i++){
       $(".card:first-child").clone().appendTo("#cards");
     }
     // initialize each card's position
     uiCards.children().each(function(index) {
-      // align the cards to be 3x6 ourselves.
+      // align the cards to be 4x4 ourselves.
       $(this).css({
-        "left" : ($(this).width() + 20) * (index % 6),
-        "top" : ($(this).height() + 20) * Math.floor(index / 6)
+        "left" : ($(this).width() + 10) * (index % 4) + 16,
+        "top" : ($(this).height() + 10) * Math.floor(index / 4)
       });
       // get a pattern from the shuffled deck
       var pattern = matchingGame.deck.pop();
@@ -249,7 +248,7 @@ function isMatchPattern() {
 //check to see if all cardmatched variable is less than 8 if so remove card only otherwise remove card and end game
 function removeTookCards() {
   playSound('match');
-  if (cardsmatched < 8){
+  if (cardsmatched < 7){
     cardsmatched++;
     $(".card-removed").remove();
   } else {
