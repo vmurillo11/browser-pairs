@@ -102,7 +102,7 @@ body {
    included in a directory in our game, but you can also use an image that is
    hosted anyhwere on the internet by using its url in the "url()" rule. */
 .ie {background: url(http://cdn.onedirection.net/wp-content/uploads/2012/11/onedirection-calendar-2013_louis.jpg) no-repeat; background-size: contain;}
-.fx {background: url(http://images6.fanpop.com/image/photos/32600000/One-Direction-s-2013-Calendar-one-direction-32643847-593-668.jpg) no-repeat; background-size: contain;}
+.fx {background: url(http://www.polyvore.com/cgi/img-thing?.out=jpg&size=l&tid=61613962) no-repeat; background-size: contain;}
 .cr {background: url(http://images6.fanpop.com/image/photos/32600000/One-Direction-s-2013-Calendar-one-direction-32643850-593-739.jpg) no-repeat; background-size: contain;}
 .sf {background: url(http://images6.fanpop.com/image/photos/32600000/One-Direction-s-2013-Calendar-one-direction-32643858-593-712.jpg) no-repeat; background-size: contain;}
 .op {background: url(http://images6.fanpop.com/image/photos/32600000/One-Direction-s-2013-Calendar-one-direction-32643856-593-692.jpg) no-repeat; background-size: contain;}
