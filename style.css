@@ -101,14 +101,14 @@ body {
 /* These styles create the images on the cards. We're using a path to the images
    included in a directory in our game, but you can also use an image that is
    hosted anyhwere on the internet by using its url in the "url()" rule. */
-.ie {background: url(http://images1.fanpop.com/images/photos/1900000/Puppy-3-dogs-1993798-1024-768.jpg) no-repeat; background-size: contain;}
+.ie {background: url(http://cdn.onedirection.net/wp-content/uploads/2012/11/onedirection-calendar-2013_louis.jpg) no-repeat; background-size: contain;}
 .fx {background: url(http://images6.fanpop.com/image/photos/32600000/One-Direction-s-2013-Calendar-one-direction-32643847-593-668.jpg) no-repeat; background-size: contain;}
-.cr {background: url(./images/cr.png) no-repeat; background-size: contain;}
-.sf {background: url(./images/sf.png) no-repeat; background-size: contain;}
-.op {background: url(./images/op.png) no-repeat; background-size: contain;}
-.ns {background: url(./images/ns.png) no-repeat; background-size: contain;}
-.tb {background: url(./images/tb.png) no-repeat; background-size: contain;}
-.fm {background: url(./images/fm.png) no-repeat; background-size: contain;}
+.cr {background: url(http://images6.fanpop.com/image/photos/32600000/One-Direction-s-2013-Calendar-one-direction-32643850-593-739.jpg) no-repeat; background-size: contain;}
+.sf {background: url(http://images6.fanpop.com/image/photos/32600000/One-Direction-s-2013-Calendar-one-direction-32643858-593-712.jpg) no-repeat; background-size: contain;}
+.op {background: url(http://images6.fanpop.com/image/photos/32600000/One-Direction-s-2013-Calendar-one-direction-32643856-593-692.jpg) no-repeat; background-size: contain;}
+.ns {background: url(http://infomodern.com/wp-content/uploads/2013/01/one-direction-desktop-wallpaper-2013.jpg) no-repeat; background-size: contain;}
+.tb {background: url(http://cdn2.gossipcenter.com/sites/default/files/imagecache/story_header/photos/One%20Direction%20Billboard%202013%20sp.jpg) no-repeat; background-size: contain;}
+.fm {background: url(http://loft965.files.wordpress.com/2013/02/one-direction-one-way-or-another-2013-1200x1200_630x630.png) no-repeat; background-size: contain;}
 
 
 /* The .reset class is added to the cards when the game is reset */
