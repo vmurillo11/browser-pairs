@@ -160,6 +160,7 @@ body {
 
 #install {
   margin: 10px auto 0;
+  display: none;
 }
 
 #install.visible {
