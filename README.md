@@ -3,16 +3,16 @@ BrowserPairs
 HTML5 Browser Pairs Game
 --------------------------------------------------------------------------
 
-_[Mozilla Taiwan Community](http://moztw.org)_ × _[E-CB Explorer Cyber Browserer](http://blog.yam.com/ECBp/article/44076465)_
+This is a simplified version of a HTML5 pairs game originally created 
+by the Mozilla Taiwan Community. This version has been modified to fit on
+screens with smaller resolutions, and comments have been added to make
+the code more self-explanatory.
 
-![moztw.org](http://moztw.org/foxmosa/game/pairs/images/icon128.jpg)
+_[Mozilla Taiwan Community](http://moztw.org)_ × _[E-CB Explorer Cyber Browserer](http://blog.yam.com/ECBp/article/44076465)_
 
 
 BrowserPairs is a HTML5 pairs game with support of various devices,  
 including mobile phones and tablets, and able to playing while offline.
-
-
-[→ Play Now](http://moztw.org/foxmosa/game/)
 
 
 The game is a demo made by [MozTW](http://moztw.org) (Mozilla Taiwan Community),  
