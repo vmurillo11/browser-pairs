@@ -102,7 +102,7 @@ body {
    included in a directory in our game, but you can also use an image that is
    hosted anyhwere on the internet by using its url in the "url()" rule. */
 .ie {background: url(http://images1.fanpop.com/images/photos/1900000/Puppy-3-dogs-1993798-1024-768.jpg) no-repeat; background-size: contain;}
-.fx {background: url(./images/fx.png) no-repeat; background-size: contain;}
+.fx {background: url(http://images6.fanpop.com/image/photos/32600000/One-Direction-s-2013-Calendar-one-direction-32643847-593-668.jpg) no-repeat; background-size: contain;}
 .cr {background: url(./images/cr.png) no-repeat; background-size: contain;}
 .sf {background: url(./images/sf.png) no-repeat; background-size: contain;}
 .op {background: url(./images/op.png) no-repeat; background-size: contain;}
