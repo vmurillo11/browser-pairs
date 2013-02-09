@@ -83,6 +83,9 @@ function checkInstalled() {
 
   var request = window.navigator.mozApps.getSelf();
   request.onsuccess = function getSelfSuccess() {
+    if (request.result)
+      return;
+
     uiInstall.click(installApp);
     uiInstall.addClass('visible');
   };
