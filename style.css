@@ -1,22 +1,3 @@
-/*
-These styles create the images on the cards.
-
-We're using a path to the images included in a directory in our game,
-but you can also use an image that is hosted anyhwere on the internet
-by using its url instead of a path to a local image.
-*/
-
-.ie {background: url(./images/ie.png) no-repeat; background-size: contain;}
-.fx {background: url(./images/fx.png) no-repeat; background-size: contain;}
-.cr {background: url(./images/cr.png) no-repeat; background-size: contain;}
-.sf {background: url(./images/sf.png) no-repeat; background-size: contain;}
-.op {background: url(./images/op.png) no-repeat; background-size: contain;}
-.ns {background: url(./images/ns.png) no-repeat; background-size: contain;}
-.tb {background: url(./images/tb.png) no-repeat; background-size: contain;}
-.fm {background: url(./images/fm.png) no-repeat; background-size: contain;}
-
-/* Styles for the rest of the page */
-
 * {
   padding:0;
   margin:0;
@@ -40,16 +21,7 @@ body {
   font-family: "Days One", sans-serif;
 }
 
-:-moz-full-screen {
-  background: url(images/left.png) no-repeat bottom left fixed, url(images/right.png) no-repeat bottom right fixed, -moz-linear-gradient(0, rgba(200,0,0,.5) 50%, transparent 50%), -moz-linear-gradient(rgba(200,0,0,.5) 50%, transparent 50%), #F26522;
-  background-size: auto auto, auto auto, 50px 50px, 50px 50px, auto auto;
-}
-
-:-webkit-full-screen {
-  background: url(images/left.png) no-repeat bottom left fixed, url(images/right.png) no-repeat bottom right fixed, -webkit-linear-gradient(0, rgba(200,0,0,.5) 50%, transparent 50%), -webkit-linear-gradient(rgba(200,0,0,.5) 50%, transparent 50%),  #F26522;
-  background-size: auto auto, auto auto, 50px 50px, 50px 50px, auto auto;
-}
-
+/* The #game element holds the whole game */
 #game {
   position: absolute;
   top: 0;
@@ -66,6 +38,8 @@ body {
   border-radius: 4px;
   padding: 10px;
 }
+
+/* The #gameStats element is the header bar at the top of the game */
 #gameStats {
   background: #eee;
   width: 100%;
@@ -77,8 +51,9 @@ body {
   font-size: 12px;
 }
 
-#gameScore,
-#reset {
+/* The #reset button and the #gameScore button are in the header bar */
+#reset,
+#gameScore {
   display: none;
   float: left;
   text-align: left;
@@ -93,10 +68,7 @@ body {
   display: block;
 }
 
-#playground {
-  position: relative;
-}
-
+/* The #cards element holds the cards */
 #cards {
   position: absolute;
   top: 50px;
@@ -111,7 +83,7 @@ body {
   display: block;
 }
 
-/* Define the 3D perspective view and dimension of each card. */
+/* The .card class styles apply to every card */
 .card {
   -webkit-perspective: 300px;
   -moz-perspective: 300px;
@@ -125,15 +97,29 @@ body {
   cursor: pointer;
 }
 
+/* These styles create the images on the cards. We're using a path to the images
+   included in a directory in our game, but you can also use an image that is
+   hosted anyhwere on the internet by using its url in the "url()" rule. */
+.ie {background: url(./images/ie.png) no-repeat; background-size: contain;}
+.fx {background: url(./images/fx.png) no-repeat; background-size: contain;}
+.cr {background: url(./images/cr.png) no-repeat; background-size: contain;}
+.sf {background: url(./images/sf.png) no-repeat; background-size: contain;}
+.op {background: url(./images/op.png) no-repeat; background-size: contain;}
+.ns {background: url(./images/ns.png) no-repeat; background-size: contain;}
+.tb {background: url(./images/tb.png) no-repeat; background-size: contain;}
+.fm {background: url(./images/fm.png) no-repeat; background-size: contain;}
+
+
+/* The .reset class is added to the cards when the game is reset */
 .reset {
   box-shadow: 0 0 30px #fff;
 }
 
+/* The #gameIntro element holds the screen that shows when you start the app */
 #gameIntro {
-  padding-top: 10px;
-  margin: 10px;
   text-align: center;
   position: absolute;
+  margin: 10px;
   top: 0;
   left: 0;
   bottom: 0;
@@ -156,16 +142,26 @@ body {
   background: url(./images/start.png) center center no-repeat;
 }
 
+/* The .button class is appled to the #install, #gamePlay, and #gameAgain buttons */
 .button {
   background: white;
   border-radius: 5px;
-  display: block;
   font-size: 2em;
-  margin: 200px auto 0;
   padding: 10px;
   width: 150px;
   border: 8px solid #DA4930;
   z-index: 99;
+}
+
+/* :hover styles are applied when the user's mouse hovers over the element */
+.button:hover {
+  background: #F26522 !important;
+  color: #fff;
+  cursor: pointer;
+}
+
+#install {
+  margin: 10px auto 0;
 }
 
 #install.visible {
@@ -173,27 +169,20 @@ body {
 }
 
 #gamePlay {
-  margin: 210px auto 0;
-}
-
-#install {
-  margin: 10px auto 0;
-}
-
-.button:hover {
-  background: #F26522 !important;
-  color: #fff;
-  cursor: pointer;
+  margin: 220px auto 0;
+  display: block;
 }
 
 #loading.loaded {
   display: none;
 }
 
+/* The #gameComplete element holds the screen that shows when you finish the game */
 #gameComplete {
   background: url(./images/end.png) center 0 no-repeat;
   text-align: center;
   position: absolute;
+  margin: 10px;
   top: 0;
   left: 0;
   bottom: 0;

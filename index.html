@@ -4,7 +4,7 @@
 <!-- The <head> tag is where the page's title, meta information, styles (and more) usually go -->
 <head>
   <meta charset="utf-8">
-  <title>BrowserPairs - Foxmosa - MozTW</title>
+  <title>BrowserPairs</title>
   <meta name="apple-touch-fullscreen" content="yes">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
@@ -31,7 +31,7 @@
     </p>
   </header>
 
-  <!-- This <div> holds the game cards-->
+  <!-- This <div> holds the cards -->
   <div id="cards">
     <div class="card">
       <div class="face front"></div>
@@ -39,11 +39,13 @@
     </div> <!-- .card -->
   </div> <!-- #cards -->
 
+  <!-- This <div> holds intro screen that shows when you start the app -->
   <div id="gameIntro">
     <div id="gamePlay" class="button">0%</div>
     <div id="install" class="button">Install</div>
   </div>
 
+  <!-- This <div> holds complete screen that shows when you finish the game -->
   <div id="gameComplete">
     <div id="result">
       <p id="score"></p>
@@ -53,7 +55,9 @@
 
 </article> <!-- #game -->
 
-<!-- These <audio> tags hold the sounds for the game -->
+<!-- These <audio> tags hold the sounds for the game. They use sounds
+     stored in the "sound" directory for the app, but you can use any
+     sound on the internet by using its url for the "src" attribute. -->
 <audio class="sound">
    <source src="sound/intro.ogg" type="audio/ogg; codecs=vorbis" />
    <source src="sound/intro.mp3" type="audio/mpeg" />
