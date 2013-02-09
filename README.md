@@ -3,9 +3,9 @@ BrowserPairs
 HTML5 Browser Pairs Game
 --------------------------------------------------------------------------
 
-This is a simplified version of a HTML5 pairs game originally created 
-by the Mozilla Taiwan Community. This version has been modified to fit on
-screens with smaller resolutions, and comments have been added to make
+This is a simplified version of a HTML5 pairs game originally created  
+by the Mozilla Taiwan Community. This version has been modified to fit on  
+screens with smaller resolutions, and comments have been added to make  
 the code more self-explanatory.
 
 _[Mozilla Taiwan Community](http://moztw.org)_ × _[E-CB Explorer Cyber Browserer](http://blog.yam.com/ECBp/article/44076465)_
