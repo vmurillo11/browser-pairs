@@ -137,9 +137,7 @@ body {
 }
 
 #game.play #gameIntro, #game.end #gameIntro {
-  opacity: 0;
-  z-index: 0;
-  background: url(./images/start.png) center center no-repeat;
+  display: none;
 }
 
 /* The .button class is appled to the #install, #gamePlay, and #gameAgain buttons */
